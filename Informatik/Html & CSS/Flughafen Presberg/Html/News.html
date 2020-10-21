@@ -1,0 +1,84 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Presberger Flughafen</title>
+    <link rel="SHORTCUT ICON" href="../Bilder/Airport.ico" />
+	<script src="../Javascript/main.js"></script>
+</head>
+<body>
+	<script>changeImage();</script>
+    <aside style="float: left">
+        <p class="date">
+            <script>writeDate(0,0);</script>
+        </p>
+    </aside>
+    <aside style="float: right">
+        <p id="clock" class="date" onmouseover="getTime()" onmouseout="noTime()"></p>
+        <script>noTime();</script>
+    </aside>
+    <header>
+        <img src="../Bilder/Airport.ico" class="left" />
+        <img src="../Bilder/Airport.ico" class="right" />
+        <h1>
+            News
+        </h1>
+    </header>
+    <aside>
+        <nav>
+            <a href="index.html">Hauptseite</a>
+            <p class="activeSite">News</p>
+            <a href="shop.html">Flüge</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="impressum.html">Impressum</a>
+            <a href="https://www.google.de/maps/dir//Presberg,+65385+R%C3%BCdesheim+am+Rhein/@50.0526611,7.8860632,16z/data=!4m16!1m7!3m6!1s0x47bde7c6e95c22af:0xe8bb433d935e49d8!2sPresberg,+65385+R%C3%BCdesheim+am+Rhein!3b1!8m2!3d50.0536457!4d7.890891!4m7!1m0!1m5!1m1!1s0x47bde7c6e95c22af:0xe8bb433d935e49d8!2m2!1d7.890891!2d50.0536457" target="_blank">Anfahrt</a>
+            <a href="zeichner.html">Zeichner</a>
+        </nav>
+    </aside>
+    <article>
+        <p class="newsDate"><script>writeDate(0,0);</script></p>
+        <h1>Neues Flugzeug</h1>
+        <p>Wir haben unseren Vorrat an Flugzeugen aufgestockt, uns steht nun ein brandneuer Jumbo-jet zur Verfügung!</p>
+        <img src="../Bilder/Jumbo.jpg" class="newsbild" style="height: 200px"/>
+		<video src="../Videos/Jumbo.mp4" controls="controls" alt="https://www.youtube.com/watch?v=t_X8_da7xmM">
+  </video>
+        <h6>gez. Ihr Presberger Flughafen</h6>
+    </article>
+    <article>
+        <p class="newsDate"><script>writeDate(1,0);</script></p>
+        <h1>Neue Landebahn</h1>
+        <p>Da wir in der Welt immer populärer werden haben wir uns dazu entschlossen eine neue Landebahn zu bauen. Die Bauarbeiten beginnen am: </p>
+        <script>writeDate(-1,-1)</script>
+        <p>Wir wollen also innerhalb von 32 Tagen beginnen. Wir freuen uns bereits darauf dem Ansturm nachzukommen.</p>
+        <h6>gez. Ihr Presberger Flughafen</h6>
+
+    </article>
+    <article>
+        <p class="newsDate"><script>writeDate(4,0);</script></p>
+        <h1>Flugzeugsammlung</h1>
+        <p>Wir haben uns ein Altes Flugzeug aus der Steinzeit zugelegt, wir werden kleine Rundflüge damit unternehmen, wer Interresse hat kann sich melden.(Wir übernehmen keine Haftung für den Verlust jeglicher Leben)</p>
+        <img src="../Bilder/Doppel.jpg" class="newsbild"/>
+        <h6>gez. Ihr Presberger Flughafen</h6>
+
+    </article>
+    <article>
+        <p class="newsDate"><script>writeDate(6,0);</script></p>
+        <h1>Wartezeiten sind nun angenehmer</h1>
+        <p>Wir haben, um das Warten auf den Flug angenehmer zu gestalten, unsere Wartehallen sowohl mit Massage-Stühlen, als auch mit einigen Spielereien ausgestattet.</p>
+        <img src="../Bilder/Massage.jpg" class="newsbild"/>
+        <img src="../Bilder/Spiel.jpg" style="height:225px" class="newsbild"/>
+        <h6>gez. Ihr Presberger Flughafen</h6>
+
+    </article>
+    <article>
+        <p class="newsDate"><script>writeDate(2,4);</script></p>
+        <h1>neuer Imbiss geöffnet</h1>
+        <p>Wir haben jetzt eine brandneue Imbissbude in unserem Flughafen. Feinste Spezialitäten (für den richtigen Preis versteht sich) werden dort angeboten, jetzt haben sogar die Schleckermäule einen Anreiz in den Flughafen zu kommen.</p>
+        <img src="../Bilder/imbiss.jpg" class="newsbild"/>
+        <h6>gez. Ihr Presberger Flughafen</h6>
+    </article>
+    <div>&nbsp;</div>
+    <footer>
+        <p>© COPYRIGHT 2016, AIRPORT PRESBERG</p>
+    </footer>
+</body>
+</html>

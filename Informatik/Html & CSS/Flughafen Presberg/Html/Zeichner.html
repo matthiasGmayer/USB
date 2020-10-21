@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Presberger Flughafen</title>
+    <link rel="SHORTCUT ICON" href="../Bilder/Airport.ico" />
+	<script src="../Javascript/main.js"></script>
+</head>
+<body>
+    <script>changeImage();</script>
+    <aside style="float: left">
+        <p class="date">
+            <script>writeDate(0,0);</script>
+        </p>
+    </aside>
+    <aside style="float: right">
+        <p id="clock" class="date" onmouseover="getTime()" onmouseout="noTime()"></p>
+        <script>noTime();</script>
+    </aside>
+    <header>
+        <img src="../Bilder/Airport.ico" class="left" />
+        <img src="../Bilder/Airport.ico" class="right" />
+        <h1>Zeichner</h1>
+        <h3>just for fun</h3>
+    </header>
+    <aside>
+        <nav>
+            <a href="index.html">Hauptseite</a>
+            <a href="news.html">News</a>
+            <a href="shop.html">Flüge</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="impressum.html">Impressum</a>
+            <a href="https://www.google.de/maps/dir//Presberg,+65385+R%C3%BCdesheim+am+Rhein/@50.0526611,7.8860632,16z/data=!4m16!1m7!3m6!1s0x47bde7c6e95c22af:0xe8bb433d935e49d8!2sPresberg,+65385+R%C3%BCdesheim+am+Rhein!3b1!8m2!3d50.0536457!4d7.890891!4m7!1m0!1m5!1m1!1s0x47bde7c6e95c22af:0xe8bb433d935e49d8!2m2!1d7.890891!2d50.0536457" target="_blank">Anfahrt</a>
+            <p class="activeSite">Zeichner</p>
+        </nav>
+    </aside>
+    <script>
+        for (g = 0; g<11500; g++){
+            var zeichner = '"zeichner"'
+            document.write("<div class="+zeichner+">&nbsp </div>")
+        }
+    </script>
+</body>
+</html>

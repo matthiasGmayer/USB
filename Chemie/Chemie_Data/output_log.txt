@@ -1,0 +1,24 @@
+Initialize engine version: 5.0.1f1 (5a2e8fe35a68)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 750 Ti (ID=0x1380)
+    Vendor:   NVIDIA
+    VRAM:     2017 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Matthias\Desktop\Spiele\Chemie_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Matthias\Desktop\Spiele\Chemie_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Matthias\Desktop\Spiele\Chemie_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Matthias\Desktop\Spiele\Chemie_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Matthias\Desktop\Spiele\Chemie_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Matthias\Desktop\Spiele\Chemie_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Matthias\Desktop\Spiele\Chemie_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Matthias\Desktop\Spiele\Chemie_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.280 seconds
+desktop: 1920x1080 60Hz; virtual: 3360x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Matthias\Desktop\Spiele\Chemie_Data\Managed\System.Core.dll (this message is harmless)
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 48c -> priority: 1 

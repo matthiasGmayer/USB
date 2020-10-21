@@ -1,0 +1,20 @@
+Sockets:
+
+Der Client connected auf den Server, den Raspberrypi.
+Der Client in Unity schickt Informationen über die Position der Slider, also die angestrebte Radgeschwindigkeit.
+Daraufhin erhält er vom Pi ein Bild der Camera.
+Da das Bild so groß ist wird es in mehreren Buffern gesendet und vom Client wieder zusammengefügt, dazu sind die ersten 32 bytes ein Integer der Länge der Bytes des Bildes.
+
+Man kann sich mit der Raspberrypi über den HostNamen raspberrypi verbinden, wenn man sich im selben Netzwerk befindet.
+
+Pi:
+
+Der Pi steuert die Motoren über GPIOs, mit welchem man eine Spannung von ~3V ausgeben kann.
+
+Der Serverscript wartet auf die Antwort des Clients, also muss die Kontrolle über die Räder über andere Threads stattfinden.
+Die Motoren der Räder können nur angeschaltet oder ausgeschaltet sein, um dennoch eine verschiedene Geschwindigkeit zu ermöglichen, schaltet der Motor sich in nur 0%-100% der Zeit ein. Beispiel: bei Speed = 0.5 läuft der Motor 50% der Zeit in kleinen Abständen, hier von 0.01s 0.005s
+
+Unity:
+Unity ermöglicht es einfach ein UI durch Drag & Drop und Scripting zu erstellen und dies nach Android zu exportieren.
+Somit konnte ich vom Script aus direkt auf die derzeitige Stellung der Slider zugreifen und somit leicht eine User-Interaction ermöglichen. Das Bild kommt in Byteform an und wird dann in eine Texture geladen, die mittig auf dem Bildschirm angezeigt wird.
+Der Rest, die Serverkommunikation ist einfaches C# und hat nichts mit Unity zutun.

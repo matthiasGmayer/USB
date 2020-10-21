@@ -1,0 +1,139 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Presberger Flughafen</title>
+    <link rel="SHORTCUT ICON" href="../Bilder/Airport.ico" />
+	<script src="../Javascript/main.js"></script>
+</head>
+<body>
+    <script>changeImage();</script>
+    <aside style="float: left">
+        <p class="date">
+            <script>writeDate(0,0);</script>
+        </p>
+    </aside>
+    <aside style="float: right">
+        <p id="clock" class="date" onmouseover="getTime()" onmouseout="noTime()"></p>
+        <script>noTime();</script>
+    </aside>
+    <header>
+        <img src="../Bilder/Airport.ico" class="left" />
+        <img src="../Bilder/Airport.ico" class="right" />
+        <h1>Flüge buchen</h1>
+        <h3>die besten Preise in Deutschland</h3>
+    </header>
+    <aside>
+        <nav>
+            <a href="index.html">Hauptseite</a>
+            <a href="news.html">News</a>
+            <p class="activeSite">Flüge</p>
+            <a href="galerie.html">Galerie</a>
+            <a href="impressum.html">Impressum</a>
+            <a href="https://www.google.de/maps/dir//Presberg,+65385+R%C3%BCdesheim+am+Rhein/@50.0526611,7.8860632,16z/data=!4m16!1m7!3m6!1s0x47bde7c6e95c22af:0xe8bb433d935e49d8!2sPresberg,+65385+R%C3%BCdesheim+am+Rhein!3b1!8m2!3d50.0536457!4d7.890891!4m7!1m0!1m5!1m1!1s0x47bde7c6e95c22af:0xe8bb433d935e49d8!2m2!1d7.890891!2d50.0536457" target="_blank">Anfahrt</a>
+            <a href="zeichner.html">Zeichner</a>
+        </nav>
+    </aside>
+    <article>
+        <a href="http://www.Paypal.com" class="Buchen">Buchen</a>
+        <h4>Ziel:</h4>  
+        <select onchange="calculatePrice()" id="Ziel">
+            <option value="62">Belgien:Brüssel</option>
+            <option value="80">England:London</option>
+            <option value="98">Dänemark:Kopenhagen</option>
+            <option value="34" selected>Deutschland:Berlin</option>
+            <option value="112">Finnland:Helsinki</option>
+            <option value="65">Frankreich:Paris</option>
+            <option value="76">Griechenland:Athen</option>
+            <option value="84">Irland:Dublin</option>
+            <option value="64">Italien:Rom</option>
+            <option value="87">Luxemburg:Luxemburg</option>
+            <option value="75">Norwegen:Oslo</option>
+            <option value="53">Österreich:Wien</option>
+            <option value="67">Polen:Warschau</option>
+            <option value="83">Russland:Moskau</option>
+            <option value="94">Schweden:Stockholm</option>
+            <option value="76">Spanien:Madrid</option>
+        </select>
+        <h4>Flug:</h4>
+        <select onchange="calculatePrice()" id="Flug">
+            <option value="1.7">
+                Hin- & Rückflug
+            </option>
+            <option value="1">
+                Hinflug
+            </option>
+        </select>
+        <h4>Klasse:</h4>
+        <select onchange="calculatePrice()" id="Klasse">
+            <option value="5">
+                Erste Klasse
+            </option>
+            <option value="2">
+                Zweite Klasse
+            </option>
+            <option value="1" selected>
+                Dritte Klasse
+            </option>
+        </select>
+        <p>Flugzeiten:</p>
+       <!-- <form name="Zeit">
+        <select id="Zeiten" name="Zeiten">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+        </select>
+        </form>  -->
+        <select style="float:left; width: 55px">
+            <option>00</option>
+            <option>01</option>
+            <option>02</option>
+            <option>03</option>
+            <option>04</option>
+            <option>05</option>
+            <option>06</option>
+            <option>07</option>
+            <option>08</option>
+            <option>09</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+        </select>
+        <h1 style="float: left; margin-top: -7px;">:</h1>
+        <select style="width: 55px">
+            <option>00</option>
+            <option>05</option>
+            <option>10</option>
+            <option>15</option>
+            <option>20</option>
+            <option>25</option>
+            <option>30</option>
+            <option>35</option>
+            <option>40</option>
+            <option>45</option>
+            <option>50</option>
+            <option>55</option>
+        </select>
+        <h3>Preis:</h3>
+        <p id="Preis">- - -</p>
+        <br/>
+        <div>&nbsp;</div>
+    </article>
+    <script>
+            calculatePrice();
+    </script>
+    <footer>
+        <p>© COPYRIGHT 2016, AIRPORT PRESBERG</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Presberger Flughafen</title>
+    <link rel="SHORTCUT ICON" href="../Bilder/Airport.ico" />
+    <script src="../javascript/main.js"></script>
+</head>
+<body>     
+    <script>changeImage();</script>
+    <aside style="float: left">
+        <p class="date">
+            <script src="../javascript/date.js"></script>
+            <script>writeDate(0,0);</script>
+        </p>
+    </aside>
+    <aside style="float: right">
+        <p id="clock" class="date" onmouseover="getTime()" onmouseout="noTime()"></p>
+        <script>noTime();</script>
+    </aside>
+    <header>
+        <img src="../Bilder/Airport.ico" class="left"/>
+        <img src="../Bilder/Airport.ico" class="right"/>
+        <h1>Presberger Flughafen</h1>
+        <h3>der gr&ouml;&szlig;te Flughafen in ganz Hessen</h3> 
+    </header>
+    <aside id="BreakNews" class="BreakNews">
+            Breaking News:
+    </aside>
+    <marquee id="news" class="news">
+        Flug 13 (15:00) von Deutschland:Presberg nach England:London wurde um 30 Minuten durch Probleme im Flugzeugmotor verschoben                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Flug 2 (22:50) von Deutschland:Presberg nach Österreich:Wien wurde um 23 Minuten durch Probleme in der Lande-Warteschlange verschoben           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Flug 1 (11:40) von Deutschland:Presberg nach Dänemark:Kopenhagen wurde um 27 Minuten durch Probleme in den Turbinen verschoben                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Flug 6 (12:10) von Deutschland:Presberg nach Frankreich:Paris wurde um 8 Minuten durch Wartungen verschoben                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Flug 5 (16:20) von Deutschland:Presberg nach Schweden:Stockholm wurde um 35 Minuten durch Unerwartete Gäste verschoben                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Flug 7 (5:10) von Deutschland:Presberg nach England:London wurde um 16 Minuten durch Probleme im Flugzeugmotor verschoben                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Flug 9 (6:20) von Deutschland:Presberg nach Italien:Rom wurde um 54 Minuten durch Wartungen verschoben                                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Flug 4 (0:50) von Deutschland:Presberg nach Irland:Dublin wurde um 23 Minuten durch Probleme im Flugzeugmotor verschoben                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Flug 12 (19:40) von Deutschland:Presberg nach Luxemburg:Luxemburg wurde um 13 Minuten durch Landeschwierigkeiten verschoben                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Flug 13 (6:10) von Deutschland:Presberg nach Niederlande:Amsterdam wurde um 11 Minuten durch Probleme in den Turbinen verschoben                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Flug 16 (7:20) von Deutschland:Presberg nach Polen:Warschau wurde um 12 Minuten durch Probleme in der Lande-Warteschlange verschoben            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Flug 15 (8:40) von Deutschland:Presberg nach Russland:Moskau wurde um 52 Minuten durch Probleme im Flugzeugmotor verschoben                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </marquee>
+    <script>
+        setwidth();
+    </script>
+    <aside>
+        <nav>
+        <p class="activeSite">Hauptseite</p>
+        <a href="news.html">News</a>
+        <a href="shop.html">Flüge</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="https://www.google.de/maps/dir//Presberg,+65385+R%C3%BCdesheim+am+Rhein/@50.0526611,7.8860632,16z/data=!4m16!1m7!3m6!1s0x47bde7c6e95c22af:0xe8bb433d935e49d8!2sPresberg,+65385+R%C3%BCdesheim+am+Rhein!3b1!8m2!3d50.0536457!4d7.890891!4m7!1m0!1m5!1m1!1s0x47bde7c6e95c22af:0xe8bb433d935e49d8!2m2!1d7.890891!2d50.0536457" target="_blank">Anfahrt</a>
+        <a href="zeichner.html">Zeichner</a>
+        </nav>
+    </aside>
+    <img id="plane" class="anime" src="../Bilder/Airport.ico" />
+    <h2>Rund um den Flug</h2>
+    <article>
+        Reisen Sie ganz entspannt vom Presberger Flughafen an die beliebtesten Reiseziele der Welt. <br/>
+        Alles rund um Ihren Flug finden sie auf dieser Seite. <br/>
+        Flüge, Buchungen, eine Galerie und vieles mehr. <br/>
+        Das beste Preis-Leistungsverhältnis in Deutschland. <br/>
+        Wir fliegen Europaweit.
+    </article>
+    <h2>Anmerkung</h2>
+    <article>
+        Die Uhr(Oben rechts) wird nur noch angezeigt ,wenn sie mit der Maus über sie gehen, da sie sonst zuviel Arbeitspeicher verbraucht und damit Lag verursacht.
+    </article>
+    <h2>
+        Aktuelle Flüge
+    </h2>
+    <table>
+        <thead>
+            <tr>
+	            <th class="liniestyle">Linie</th>
+	            <th class="zielstyle">Ziel</th>
+	            <th>Abflugszeit</th>
+	  <!--          <th>Verbleibende Zeit</th>    Nicht geschafft -->
+                <th>Nummer</th>
+	            <th class="terminalstyle">Terminal</th>
+            </tr>
+        </thead>	  
+        <tbody>
+            <tr>
+                <td class="liniestyle">LH</td>
+	            <td>Russland:Moskau</td>
+	            <td><script>relativeClock(3, 20)</script></td>
+                <td>17</td>
+	            <td class="terminalstyle">2</td>
+            </tr>
+            <tr class="rowstyle">
+                <td class="liniestyle">PF</td>
+	            <td>Polen:Warschau</td>
+	            <td><script>relativeClock(3,45)</script></td>
+                <td>23</td>
+	            <td class="terminalstyle">1</td>
+            </tr>
+            <tr>
+                <td class="liniestyle">PF</td>
+	            <td>Niederlande:Amsterdam</td>
+	            <td><script>relativeClock(3,55)</script></td>
+                <td>18</td>
+	            <td class="terminalstyle">3</td>
+            </tr>
+            <tr class="rowstyle">
+                <td class="liniestyle">LH</td>
+	            <td>Österreich:Wien</td>
+	            <td><script>relativeClock(4,25)</script></td>
+                <td>21</td>
+	            <td class="terminalstyle">2</td>
+            </tr>
+            <tr>
+                <td class="liniestyle">PF</td>
+	            <td>Italien:Rom</td>
+	            <td><script>relativeClock(5,0)</script></td>
+                <td>20</td>
+	            <td class="terminalstyle">1</td>
+            </tr>
+            <tr class="rowstyle">
+                <td class="liniestyle">LH</td>
+	            <td>Frankreich:Paris</td>
+	            <td><script>relativeClock(5,23)</script></td>
+                <td>19</td>
+	            <td class="terminalstyle">3</td>
+            </tr>
+        </tbody>
+    </table>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <footer>
+        <p>© COPYRIGHT 2016, AIRPORT PRESBERG</p>
+    </footer>
+</body>
+</html>
